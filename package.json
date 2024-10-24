@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:array": "npx jest tests/array"
+    "test:array": "npx jest tests/array",
+    "test:stack": "npx jest tests/stack"
   },
   "author": "ehtan-park",
   "license": "ISC",
