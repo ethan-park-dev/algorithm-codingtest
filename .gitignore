@@ -1,2 +1,4 @@
 /node_modules
 /coverage
+
+solution_ignore.js
