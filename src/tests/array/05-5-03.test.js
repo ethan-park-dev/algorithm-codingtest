@@ -1,4 +1,4 @@
-import solution from '../../main/array/05-5';
+import solution from '../../main/array/05-5-03';
 
 test('배열 [2, 1, 3, 4, 1]의 모든 쌍의 합을 정렬합니다', () => {
   expect(solution([2, 1, 3, 4, 1])).toEqual([2, 3, 4, 5, 6, 7]);

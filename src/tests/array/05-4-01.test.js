@@ -1,4 +1,4 @@
-import solution from '../../main/array/05-4';
+import solution from '../../main/array/05-4-01';
 
 test('음수가 포함된 배열을 정렬', () => {
   expect(solution([1, -5, 2, 4, 3])).toEqual([-5, 1, 2, 3, 4]);
