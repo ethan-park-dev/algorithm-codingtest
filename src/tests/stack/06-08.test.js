@@ -1,4 +1,4 @@
-import solution from '../../main/stack/06-3';
+import solution from '../../main/stack/06-08';
 
 describe('괄호 짝 맞추기 테스트', () => {
   test('올바른 괄호 쌍: () -> true', () => {

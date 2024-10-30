@@ -1,4 +1,4 @@
-import solution from '../../main/stack/09';
+import solution from '../../main/stack/06-09';
 
 describe('10진수를 2진수로 변환하는 테스트', () => {
   test('10을 2진수로 변환: 10 -> 1010', () => {
