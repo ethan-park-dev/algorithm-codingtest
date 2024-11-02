@@ -1,3 +1,5 @@
+import solution from '../../main/stack/06-11';
+
 describe('solution', () => {
   test('기본 테스트 케이스 1', () => {
     const s = 'baabaa';
