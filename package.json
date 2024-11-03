@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:array": "npx jest tests/array",
-    "test:stack": "npx jest tests/stack"
+    "test:stack": "npx jest tests/stack",
+    "test:queue": "npx jest tests/queue"
   },
   "author": "ehtan-park",
   "license": "ISC",
