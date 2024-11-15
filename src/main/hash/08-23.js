@@ -2,7 +2,7 @@
  * 베스트 앨범
  *
  * 문제 URL: https://programmers.co.kr/learn/courses/30/lessons/42579
- * 정답 URL: https://github.com/kciter/coding-interview-js/blob/main/solution/22.js
+ * 정답 URL: https://github.com/kciter/coding-interview-js/blob/main/solution/23.js
  *
  * 문제 설명
  *  스트리밍 사이트에서 장르 별로 가장 많이 재생된 노래를 두 개씩 모아 베스트 앨범을 출시하려 합니다.
