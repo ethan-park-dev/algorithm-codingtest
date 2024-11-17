@@ -8,7 +8,8 @@
     "test:array": "npx jest tests/array",
     "test:stack": "npx jest tests/stack",
     "test:queue": "npx jest tests/queue",
-    "test:hash": "npx jest tests/hash"
+    "test:hash": "npx jest tests/hash",
+    "test:tree": "npx jest tests/tree"
   },
   "author": "ehtan-park",
   "license": "ISC",
