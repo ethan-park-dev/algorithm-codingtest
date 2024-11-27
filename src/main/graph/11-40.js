@@ -135,3 +135,119 @@ export default function solution(graph, start) {
 
   return [distances, sortedPaths];
 }
+
+// class MinHeap {
+//   constructor() {
+//     this.heap = [];
+//   }
+
+//   push(node) {
+//     this.heap.push(node);
+//     this._bubbleUp();
+//   }
+
+//   pop() {
+//     if (this.heap.length === 1) return this.heap.pop();
+//     const min = this.heap[0];
+//     this.heap[0] = this.heap.pop();
+//     this._sinkDown();
+//     return min;
+//   }
+
+//   _bubbleUp() {
+//     let index = this.heap.length - 1;
+//     const last = this.heap[index];
+
+//     while (index > 0) {
+//       const parentIndex = Math.floor((index - 1) / 2);
+//       const parent = this.heap[parentIndex];
+//       if (last[0] >= parent[0]) break;
+//       this.heap[index] = parent;
+//       index = parentIndex;
+//     }
+//     this.heap[index] = last;
+//   }
+
+//   _sinkDown() {
+//     let index = 0;
+//     const length = this.heap.length;
+//     const element = this.heap[0];
+
+//     while (true) {
+//       const leftIndex = 2 * index + 1;
+//       const rightIndex = 2 * index + 2;
+//       let swapIndex = null;
+
+//       if (leftIndex < length) {
+//         if (this.heap[leftIndex][0] < element[0]) {
+//           swapIndex = leftIndex;
+//         }
+//       }
+
+//       if (rightIndex < length) {
+//         if (
+//           (swapIndex === null && this.heap[rightIndex][0] < element[0]) ||
+//           (swapIndex !== null && this.heap[rightIndex][0] < this.heap[swapIndex][0])
+//         ) {
+//           swapIndex = rightIndex;
+//         }
+//       }
+
+//       if (swapIndex === null) break;
+//       this.heap[index] = this.heap[swapIndex];
+//       index = swapIndex;
+//     }
+//     this.heap[index] = element;
+//   }
+
+//   isEmpty() {
+//     return this.heap.length === 0;
+//   }
+// }
+
+// function dijkstra(graph, start) {
+//   // 거리 테이블 초기화
+//   const distances = {};
+//   for (const node in graph) {
+//     distances[node] = Infinity;
+//   }
+//   distances[start] = 0;
+
+//   // 우선순위 큐 초기화
+//   const pq = new MinHeap();
+//   pq.push([0, start]); // [거리, 노드]
+
+//   while (!pq.isEmpty()) {
+//     const [currentDist, currentNode] = pq.pop();
+
+//     // 현재 거리보다 크다면 무시
+//     if (currentDist > distances[currentNode]) continue;
+
+//     // 인접 노드 탐색
+//     for (const [neighbor, weight] of graph[currentNode]) {
+//       const newDist = currentDist + weight;
+
+//       // 새로운 거리가 기존 거리보다 짧으면 갱신
+//       if (newDist < distances[neighbor]) {
+//         distances[neighbor] = newDist;
+//         pq.push([newDist, neighbor]);
+//       }
+//     }
+//   }
+
+//   return distances;
+// }
+
+// // 그래프 정의 (인접 리스트)
+// const graph = {
+//   A: [["B", 2], ["D", 1]],
+//   B: [["C", 3]],
+//   C: [],
+//   D: [["E", 1]],
+//   E: [["C", 4]],
+// };
+
+// // 알고리즘 실행
+// const startNode = "A";
+// const result = dijkstra(graph, startNode);
+// console.log(result);
